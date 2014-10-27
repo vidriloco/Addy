@@ -1,0 +1,8 @@
+es_MX:
+  addynovi:
+    landing:
+      lang:
+        switch: "Inglés"
+      main: "¡Asómate a ver lo que tenemos para ti!"
+      visit: "Visita nuestras tiendas en %{store_one} y en %{store_two}"
+      contact: "Ponte en contacto, escríbenos a %{contact}"

@@ -1,0 +1,27 @@
+<p class="lang-switch">
+	<% if I18n.locale.to_sym == :en %>
+		<%= link_to t('addynovi.landing.lang.switch'), '/' %>
+	<% else %>
+		<%= link_to t('addynovi.landing.lang.switch'), '/en' %>
+	<% end %>
+</p>
+<div class="text-centered">
+	<div class="logo">
+		<%= image_tag('logo.png') %>
+	</div>
+
+	<div class="content centered">
+		<h3><%= t('addynovi.landing.main') %></h3>
+	
+		<ul>
+			<li><%= link_to image_tag('pinterest-icon.png'), nil, target: '_blank' %></li>
+			<li><%= link_to image_tag('twitter-icon.png'), nil, target: '_blank' %></li>
+			<li><%= link_to image_tag('fb-icon.png'), nil, target: '_blank' %></li>
+		</ul>
+	
+		<h4>
+			<%= t('addynovi.landing.visit', store_one: link_to('Etsy.com', nil, target: '_blank'), store_two: link_to('Kichink', nil, target: '_blank')).html_safe %><br/>
+			<span><%= t('addynovi.landing.contact', contact: mail_to('contacto@addynovi.com')).html_safe %></span>
+		</h4>
+	</div>
+</div>
